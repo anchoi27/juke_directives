@@ -2,6 +2,8 @@
   <p>
     <h3>{{ album.name }}</h3>
     <img ng-src="{{ album.imageUrl }}" class="img-thumbnail">
+    <button class="btn btn-default btn-s" ng-click="shuffle(album.songs)">
+    <span class="glyphicon glyphicon-random"></span></button>
   </p>
  <!--  <table class='table'>
     <thead>

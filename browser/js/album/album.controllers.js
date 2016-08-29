@@ -3,9 +3,10 @@
 
 /* ALBUMS (SINGULAR) CONTROLLER */
 
-juke.controller('AlbumCtrl', function ($scope, PlayerFactory, theAlbum) {
+juke.controller('AlbumCtrl', function ($scope, PlayerFactory, theAlbum, AlbumFactory) {
 
   $scope.album = theAlbum;
+  $scope.shuffle = AlbumFactory.shuffle;
 
   // $scope.toggle = function (song) {
   //   if (song !== PlayerFactory.getCurrentSong()) {
